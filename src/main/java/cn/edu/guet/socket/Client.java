@@ -9,7 +9,7 @@ import java.net.Socket;
 public class Client {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("localhost" +
-                "说：：",8888);
+                "说：：",8887);
         //启动线程发送信息
        SendMessageThread sendMessageThread = new SendMessageThread(socket);
        sendMessageThread.start();
