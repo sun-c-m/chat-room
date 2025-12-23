@@ -8,8 +8,8 @@ import java.net.Socket;
 
 public class Client {
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("" +
-                "",8888);
+        Socket socket = new Socket("localhost" +
+                "说：",8888);
         //启动线程发送信息
        SendMessageThread sendMessageThread = new SendMessageThread(socket);
        sendMessageThread.start();
